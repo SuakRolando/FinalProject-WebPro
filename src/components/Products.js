@@ -6,7 +6,7 @@ const Products = () => {
   const [text, setText] = useState("");
 
   useEffect(() => {
-    fetch("http://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48")
+    fetch("https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48")
       .then((response) => response.json())
       .then((data) => setProducts(data.data.phones));
 
@@ -15,9 +15,7 @@ const Products = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    //hit TMDB Rest API endpoint to search for a movie
-    fetch(`http://api-mobilespecs.azharimm.site/v2/search?query=${text}`)
+    fetch(`https://api-mobilespecs.azharimm.site/v2/search?query=${text}`)
       .then((response) => response.json())
       .then((data) => setProducts(data.data.phones));
 
