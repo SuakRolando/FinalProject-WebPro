@@ -1,0 +1,13 @@
+.bg-darkBlue{
+    background-color: #191f62;
+}
+
+.bg-fullScreen{
+    background-color: rgb(235, 235, 235);
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.text-darkBlue{
+    color: #191f62;
+}
