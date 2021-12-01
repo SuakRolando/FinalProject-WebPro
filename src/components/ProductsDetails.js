@@ -9,7 +9,7 @@ const ProductsDetails = (props) => {
         <div className="row gx-4 gx-lg-5 align-items-center">
           <div className="col-md-5">
             <img
-              className="card-img-top my-4"
+              className="card-img-top my-5"
               src={props.product.thumbnail}
               alt={props.product.phone_name}
             />
